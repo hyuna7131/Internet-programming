@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice29</title>
+    <script>
+        function myFunction1() {
+            document.querySelector("input").value = "자바스크립트";
+        }
+        
+        function changeBg(inputBox) {
+            inputBox.style.background = "yellow";
+        }
+
+        function myFunction2(e) {
+            if (e.keyCode == 13)
+                alert("키보드가 눌림");
+        }
+
+        
+    </script>
+</head>
+<body>
+    블록선택: <input type="text" value="Hello world!"
+            onselect="myFunction1()" onfocus="changeBg(this)">
+    <br>
+    키보드 누름: <input type="text" onkeypress="myFunction2(event)">
+    
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice32</title>
+</head>
+<body>
+    <h1>방문 시간에 따라 배경색 변경</h1>
+    <p>페이지 방문 초시간이 짝수이면 배경색이 yellow, 홀수이면 lightblue로 설정</p>
+    <p id="date"></p>
+    <script>
+        var today = new Date();
+        document.querySelector("#date").innerHTML = today.getHours() + "시: " + today.getMinutes() + "분: " + today.getSeconds() + "초";
+        
+        if(today.getSeconds() % 2 == 0)
+            document.body.style.backgroundColor = "yellow";
+        else
+            document.body.style.backgroundColor = "lightblue";
+    </script>
+</body>
+</html>

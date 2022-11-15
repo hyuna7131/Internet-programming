@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>조건연산자와 논리연산자</h1>
+    <script>
+        var age = parseInt(prompt("나이를 입력하시오"));
+        if (age < 20)
+            document.write("10대이하 이다");
+        else if (age < 40)
+            document.write("20대와 30대이다.");
+        else if (age < 60)
+            document.write("40대와 50대이다");
+        else
+            document.write("노년기이다");
+
+        
+        var str = (age % 2 == 0)?"나이가 짝수이다":"나이가 홀수이다";
+        document.write(str);
+    </script>
+</body>
+</html>

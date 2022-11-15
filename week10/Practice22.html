@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice22</title>
+</head>
+<body>
+    <h1 id="heading">당신의 마스크 구매 요일은 언제일까요?</h1>
+    <hr>
+    <script>
+        var year = parseInt(prompt("태어난 년도 입력:"));
+
+        if (year % 10 == 1 || year % 10 == 6)
+            document.write("월요일에 구매 가능");
+        else if(year % 10 == 2 || year % 10 == 7)
+            document.write("화요일에 구매 가능");
+        else if(year % 10 == 3 || year % 10 == 8)
+            document.write("수요일에 구매 가능");
+        else if(year % 10 == 4 || year % 10 == 9)
+            document.write("목요일에 구매 가능");
+        else if(year % 10 == 0 || year % 10 == 5)
+            document.write("금요일에 구매 가능");
+
+        document.write("<br><br>" + "토요일과 일요일도 구매 가능");
+
+        document.body.style.color = "red";
+        document.getElementById("heading").style.color = "black";      
+    </script>
+</body>
+</html>

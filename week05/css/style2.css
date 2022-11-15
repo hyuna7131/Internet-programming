@@ -1,0 +1,9 @@
+body{
+    font-family:'나눔고딕', '맑은 고딕', '돋움';
+    font-size:large;
+    color:rgba(0, 0, 255, 0.5);
+
+}
+*{
+    line-height: 2em;
+}

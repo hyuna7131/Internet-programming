@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice27</title>
+    <script>
+         function print_data() {
+            document.write("<h2>원본데이터 : ");
+            for(var i = 0; i < datas.length; i++)
+                document.write("" + datas[i] + " ");
+            document.write("</h2>")
+        }
+
+        function draw_bar() {
+            for(var j= 0;  j < datas.length; j++){
+                for(var size = 1; size <= datas[j]; size++)
+                    document.write("*");
+                document.write(datas[j] + "<br>");
+                }    
+        }
+    </script>
+</head>
+<body>
+    <h1>배열과 함수</h1>
+    <p>datas배열에 20, 34, 40, 10, 23가 저장되어 있을 때 배열에 저장된 데이터를 화면에 출력하고, 배열에 있는 데이터를 가져와서 가로막대 그래프를 그려준다.</p>
+    
+    <script>
+        var datas = [20, 34, 40, 10, 23];
+        
+        print_data();
+        document.write("<hr>");
+
+        draw_bar();
+        document.write("<hr>");
+    </script>
+</body>
+</html>

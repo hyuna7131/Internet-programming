@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice21</title>
+</head>
+<body>
+    <h1>두 수를 이용한 산술연산</h1>
+    <script>
+        var n = prompt("첫 번째 정수 입력:");
+        var m = prompt("두 번째 정수 입력:");
+        var cal = prompt("연산자를 입력하시오");
+
+        switch(cal)
+        {
+            case '+':
+                result = n + m;
+                break;
+            case '-':
+                result = n - m;
+                break;
+            case '*':
+                result = n * m;
+                break;
+            case '/':
+                result = n / m;
+                break;
+            case '%':
+                result = n % m;
+                break;
+        }
+
+        document.write(n + " " + cal + " " + m + " = " + result);
+    </script>
+</body>
+</html>

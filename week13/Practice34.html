@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>practice34</title>
+	<script>
+		
+	</script>
+</head>
+<body>
+	<button onclick="inntext()">innerText로 표시</button>
+	<button onclick="innhtml()">innerHTML로 표시</button>
+	<button onclick="show_div()">div 내용 출력</button>
+	<h1>현재 시각: </h1>
+	<div id="current"></div>
+	<p></p>
+	<script>
+		var now = new Date();
+		var divObj = document.getElementById("current");
+	
+		function inntext(){
+			divObj.innerText = now;
+			divObj.style.backgroundColor = "yellow";
+			style_divObj();
+		}
+
+		function innhtml(){
+			divObj.innerHTML = "<h3><em>" + now + "</em></h3>";
+			divObj.style.backgroundColor = "lightcyan";
+			style_divObj();
+		}
+
+		function style_divObj(){
+		divObj.style.border = "1px solid red";
+		divObj.style.width = "500px";
+		divObj.style.padding = "30px";
+		}
+		
+		function show_div(){
+			var info = divObj.innerText;
+			var pObj = document.querySelector("p");
+			pObj.innerText = info;
+			
+		}	
+	</script>
+</body>
+</html>

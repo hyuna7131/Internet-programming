@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice18</title>
+    <style>
+        div {
+            border: 1px solid gray;
+            width: 300px;
+            margin: 30px;
+        }
+        #text {
+            color: gray;
+            font-size: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div style="text-align:center">
+        <h1 style="color:red"">HTML</h1>
+        <p id="text">위 텍스트를 클릭해 보세요</p>
+    </div>
+    <div id="box2">
+        <h1 id="heading">CSS</h1>
+        <p id="text">위 텍스트를 클릭해 보세요</p>
+    </div>
+    <div id="box3">
+        <h1 id="heading2">CSS</h1>
+        <p id="text">위 텍스트를 클릭해 보세요</p>
+    </div>
+
+    <script>
+        var heading = document.querySelector('#heading');
+            heading.style.color = "green";
+        var box2 = document.querySelector('#box2');
+            box2.style.textAlign = "center";
+    </script>
+    <script src="js/practice18.js"></script>
+</body>
+</html>

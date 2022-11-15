@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice28</title>
+    <style>
+        table {
+            float: left;
+            position: relative;
+            left: 5px;
+            border: solid black 1px;
+            margin: 10px 30px 0px 0px;
+        }
+        td {
+            text-align: center;
+            font-weight: bold;
+            padding: 20px 10px 5px 10px;
+        }
+        img {
+            width: 70px;
+            height: 70px;
+        }
+    </style>
+</head>
+<body>
+    <h1>익명 함수 사용</h1>
+    <script>
+        var datas = [20, 31,40, 10,23];
+
+        var isPrime = function(num)
+        {
+            var prime = true;
+            for(var i = 2; i < num; i++)
+                if(num % i == 0)
+                    return false;
+
+            return true;
+        }
+        
+        for( var k=0; k<datas.length; k++)
+        {
+            if(isPrime(datas[k]))
+                    document.write("<table><tr><td>" + datas[k] + "<br><img src='image/smile.png'" + "</tr></td></table>");
+                else
+                    document.write("<table><tr><td>" + datas[k] + "<br><img src='image/sad.png'" + "</tr></td></table>");
+        }
+        
+        
+    </script>
+</body>
+</html>

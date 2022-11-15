@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>함수</title>
+    <script>
+        /*function isPrime(num)
+        {
+            var prime = true;   //소수이다라고 가정하고 시작
+            for(var i = 2; i < n; i++)
+                if(num % i == 0)
+                    return false;
+
+            return true;
+        }*/
+        var isPrime = function(num)   //익명함수
+        {
+            //var prime = true;   //소수이다라고 가정하고 시작
+            for(var i = 2; i < n; i++)
+                if(num % i == 0)
+                    return false;
+
+            return true;
+        }
+
+        var print_prime = function(su)
+        {
+            if (isPrime(su))
+            document.write(su + ": 소수이다<br>");
+        else    
+            document.write(su + ": 소수가 아니다<br>");
+        }
+    </script>
+</head>
+<body>
+    <h1>함수 연습</h1>
+    <script>
+        //난수 생성
+       // var n = Math.random()    //0이상이고 1미만 수 생성
+        var n = parseInt(Math.random() * 100) + 1;    //Math.floor() 내림
+        document.write(n);
+
+        if (isPrime(n))
+            document.write("소수이다<br>");
+        else    
+            document.write("소수가 아니다<br>");
+        
+        print_prime(1234567);
+
+    </script>
+</body>
+</html>

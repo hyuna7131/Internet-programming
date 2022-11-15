@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice14</title>
+    <style>
+        * {
+            margin-left: auto;
+            margin-right: auto;
+        }
+        #container {
+            width: 70%;
+            position: relative;
+        }
+        p {
+            text-indent: 10px;
+            line-height: 1.5em;
+        }
+        .img1 {
+            position: fixed;
+            top: 10px;
+            left: 200px;
+            padding: 10px;
+        }
+        h1 {
+            text-align: center;
+            text-shadow: 3px 3px 20px #00ffb3;
+            margin-bottom: 50px;
+            color: blue;
+        }
+        ul {
+            text-align: right;
+            list-style-type: none;
+            margin-bottom: 30px;
+        }
+        li {
+            text-align: center;
+            display: inline-block;
+            border-top: 2px solid green;
+            border-bottom: 5px solid green;
+            font-weight: bold;
+            width: 200px;
+            margin-right: 50px;
+            color: red;
+            padding: 5px 0px;
+        }
+        .box1 {
+            box-sizing: border-box;
+            padding: 10px;
+            position: relative;
+            width: 100%;
+            border: 1px dashed red;
+            border-radius: 10px;
+            margin-bottom: 40px;
+            margin-left: 0px;
+        } 
+        .box2 {
+            border: 2px solid;
+            border-top-right-radius: 50px;
+            border-bottom-left-radius: 50px;
+            position: absolute;
+            left: 1px;
+            width: 45%;
+            height: 300px;
+            border: 1px solid gray;
+            padding: 5px;
+        }
+        .img2 {
+            float: right;
+            padding: 10px;
+        }
+        .img3 {
+            float: left;
+            padding: 10px;
+        }
+        .box3 {
+            border: 2px solid;
+            border-top-left-radius: 50px;
+            border-bottom-right-radius: 50px;
+            position: absolute;
+            right: 1px;
+            width: 45%;
+            height: 300px;
+            border: 1px solid gray;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <header>
+        <h1>나의 학교소개</h1><br>
+        <nav>
+            <ul>
+                <li>로고</li>
+                <li>사이버캠퍼스투어</li>
+                <li>배너</li>
+            </ul>
+        </nav>
+        </header>
+        <section>
+        <div class="box1">
+            <p>    
+                http://www.dongduk.ac.kr의 왼쪽에 보이는 학교 로고를 다운로드하여 images폴더에 저장한 후 이미지 삽입
+            </p>
+            
+            <a href="http://www.dongduk.ac.kr">
+            <img class="img1" src="images/학교로고.png" alt="학교로고">
+            </a>
+        </div>
+        <div class="box2">
+            <img class="img2" src="사이버캠퍼스투어.jpg" width="40%" alt="사이버캠퍼스투어">
+            <p>
+                http://www.dongduk.ac.kr의 아래 보이는 사이버캠퍼스투어 이미지를 다운로드하여 week3폴더에 저장한 후<br>
+                width-"50%", height="50%" 크기로 이미지 삽입
+            </p>
+        </div>
+        <div class=" box3">
+            <img class="img3" src="https://www.dongduk.ac.kr/resources/kor/img/vi07.jpg" width="40%" alt="학교교화-목화">
+            <p>학교 첫화면 배너에 보이는 이미지 중 하나의 주소로 이미지 삽입<br>
+                크기는 width="300"으로 지정
+            </p>
+        </div>
+        </section>
+    </div>
+</body>
+</html>
